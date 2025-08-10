@@ -1,53 +1,35 @@
-* {
-  margin: 0;
-  padding: 0;
+#banner {
+    padding: 100px 0 100px 0;
+    background-color: #3858fb;
 }
-.banner-section {
-  width: 100%;
-  background: url('https://www.kiweb.or.kr/assets/front/img/bnr_sub05-2.png');
-  padding-top: 70px;
-  padding-bottom: 70px;
-  padding-right: 90px;
-}
-
-.banner-section > div {
-  color: white;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  max-width: 1200px;
+#banner > .banner-inner {
+    position: relative;
+    /* 최대 넓이는 이정도야! */
+    max-width: 1200px; 
+    margin: 0 auto 0 auto;
+    color: white;
 }
 
-.banner-section > div > h2 {
-  font-weight: 700;
-  line-height: 57px;
-  font-size: 43px;
+/* 배너 왼쪽 */
+#banner > .banner-inner > .left > h4 {
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 48px;
+}
+#banner > .banner-inner > .left > h3 {
+    padding-top: 16px;
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 62px;
 }
 
-.banner-section > div > ul {
-  list-style: none;
-  display: flex;
-  gap: 57px;
+/* 배너 오른쪽 */
+#banner > .banner-inner > .right {
+    position: absolute;
+    top: -45px;
+    right: 0px;
+    width: 424px;
+    height: 380px;
+    background: url('../img/banner-right.png') no-repeat center / contain;
 }
 
-.banner-section > div > ul > li {
-  position: relative;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 21px;
-}
-.banner-section > div > ul > li:not(:last-child)::after {
-  content: '';
-  position: absolute;
-  bottom: 1.5px;
-  right: -38px;
-  display: block;
-  width: 22px;
-  height: 22px;
-  background: url(https://www.kiweb.or.kr/assets/front/img/mid_lnb_arrow.png)
-    no-repeat center / contain;
-}
